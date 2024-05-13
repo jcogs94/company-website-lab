@@ -1,0 +1,20 @@
+#socials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 15px;
+}
+
+.socials > li {
+    /* width: 120px; */
+}
