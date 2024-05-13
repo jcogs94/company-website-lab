@@ -1,0 +1,25 @@
+#staff-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 20px;
+}
+
+.staff-cat {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    gap: 20px;
+}
+
+.staff-cat > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.staff-cat > ul > li {
+    margin: 5px 0;
+}

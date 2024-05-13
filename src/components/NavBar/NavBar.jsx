@@ -8,7 +8,6 @@ const NavBar = ({ handler }) => {
             <a onClick={() => handler('history')}>Our History</a>
             <a onClick={() => handler('games')}>Games</a>
             <a onClick={() => handler('staff')}>Staff</a>
-            <a onClick={() => handler('contact-us')}>Contact Us</a>
         </nav>
     </>
 }
