@@ -9,4 +9,5 @@
     align-items: center;
     justify-items: flex-start;
     min-height: 100vh;
+    gap: 70px;
 }
