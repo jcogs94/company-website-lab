@@ -1,14 +1,24 @@
 import { useState } from 'react'
 import NavBar from './components/NavBar/NavBar.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import Home from './components/Home/Home.jsx'
 import './App.css'
 
 function App() {
+  const [pageDisplayed, setPageDisplay] = useState('home')
+  
+  const handlePageChange = (newPage) => {
+    console.log(`${newPage} clicked`)
+    setPageDisplay(newPage)
+  }
+
   return (
     <>
-      <NavBar />
-      <h1>Start</h1>
-      <Footer />
+      <NavBar handler={handlePageChange} />
+      {pageDisplayed === 'home' ? <Home /> : (
+        <h1>New Page</h1>
+      )}
+      <Footer handler={handlePageChange} />
     </>
   )
 }

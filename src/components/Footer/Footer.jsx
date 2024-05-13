@@ -1,13 +1,13 @@
-import * as handlers from '../../assets/handlers.jsx'
+import App from '../../App.jsx'
 import './Footer.css'
 
-const Footer = () => {
+const Footer = ({ handler }) => {
     return <>
         <footer>
-            <a onClick={handlers.ourHistory}>Our History</a>
-            <a onClick={handlers.games}>Games</a>
-            <a onClick={handlers.staff}>Staff</a>
-            <a onClick={handlers.contactUs}>Contact Us</a>
+            <a onClick={() => handler('history')}>Our History</a>
+            <a onClick={() => handler('games')}>Games</a>
+            <a onClick={() => handler('staff')}>Staff</a>
+            <a onClick={() => handler('contact-us')}>Contact Us</a>
             <div>
                 {/* TODO: Add external links */}
             </div>

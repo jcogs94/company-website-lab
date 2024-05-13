@@ -1,14 +1,14 @@
-import * as handlers from '../../assets/handlers.jsx'
+import App from '../../App.jsx'
 import './NavBar.css'
 
-const NavBar = () => {
+const NavBar = ({ handler }) => {
     return <>
         <nav>
-            <a onClick={handlers.homePage}>Home</a>
-            <a onClick={handlers.ourHistory}>Our History</a>
-            <a onClick={handlers.games}>Games</a>
-            <a onClick={handlers.staff}>Staff</a>
-            <a onClick={handlers.contactUs}>Contact Us</a>
+            <a onClick={() => handler('home')}>Home</a>
+            <a onClick={() => handler('history')}>Our History</a>
+            <a onClick={() => handler('games')}>Games</a>
+            <a onClick={() => handler('staff')}>Staff</a>
+            <a onClick={() => handler('contact-us')}>Contact Us</a>
         </nav>
     </>
 }
