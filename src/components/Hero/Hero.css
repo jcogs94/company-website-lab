@@ -1,7 +1,6 @@
 #hero {
     width: 100vw;
     height: 175px;
-    background-color: antiquewhite;
     display: flex;
     align-items: center;
     justify-content: center;
